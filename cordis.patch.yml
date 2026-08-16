@@ -1,0 +1,8 @@
+# dsh-cost-monitor bundle patch: insert the cost-monitor row into the profile.
+# The row is a host entry (lib/index.js) that registers the `sessionCost`
+# session projection (exact per-request model pricing), and a browser-roster
+# client module (lib/client.js via the dsh.client manifest) that renders the
+# estimate in the composer dock (the stats strip at the bottom of the session).
+- insert:
+    - id: cost-monitor
+      name: dsh-cost-monitor
